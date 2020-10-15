@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e030447-55af-4d39-972c-50513c458fdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602624286370</updated>
       <workItem from="1602624287406" duration="552000" />
-      <workItem from="1602729875321" duration="375000" />
+      <workItem from="1602729875321" duration="711000" />
     </task>
     <servers />
   </component>
