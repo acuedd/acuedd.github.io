@@ -1,316 +1,1192 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Edward Acu</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <!-- <style>
-      @media screen and (max-width: 768px) {
-        body {
-          border: 10px solid blue;
-        }
-      }
-    </style> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
-    <header class="header">
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Ed Acu | Software Developer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ed Acu | Software Developer" />
+  <meta property="og:description" content="Software Developer" />
+  <meta property="og:url" content="https://acuedd.github.io/" />
+  <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
+  <meta property="article:publisher" content="https://acuedd.github.io/" />
+  <meta property="og:image" content="https://acuedd.github.io/examples/preview.JPG" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@acuedd" />
+  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+  <meta name="twitter:description" content="Software Developer" />
+  <meta name="twitter:url" content="https://twitter.com/Acuedd" />
+  <meta name="author" content="Ed Acu" />
+  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/acuedd.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <!--
+        ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open Ed's resume in a new tab" href="https://acuedd.github.io/assets/resume/EDWARD_ACU_SOFTWARE_ENGINEER.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Ed Acu</a><span class="black-text">Software Developer</span>
+    </div>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Ed's Resume in a new tab"
+          href="https://acuedd.github.io/assets/resume/EDWARD_ACU_SOFTWARE_ENGINEER.pdf" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
       <div class="container">
-        <figure class="logo">
-          <img src="images/logo_acuedd.jpg" height="50" alt="Logo de http://acuedd.github.io/" />
-        </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" href="#eventos">Experiencia</a>
-            </li>
-            <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </header>
-    <section class="hero">
-      <div class="container" >
-        <h1 style="max-width: 450px">
-          Hola! Soy <strong>Edward Acu</strong> <br/> Desarrollador <strong>web</strong> y  <strong>apps móviles</strong>
-        </h1>
-        <img class="hero-image" src="images/acuedd.jpg" width="500" height="300" alt="imagen principal del sitio">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal">Edward Acu.</span></h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->              
+              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/acuedd/" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/acuedd/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+
+              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
+                <button class="icon-btn angellist">
+                  <i class="fa fa-angellist"></i>
+                </button>
+              </a> -->
+
+              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+
+                  </span>
+              </a> -->
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="portafolio" class="portfolio">
-      <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">TigoPOS</h3>
-            <h6 class="project-course">PHP / Javascript / Java for Android / SWIFT </h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2014 a la fecha</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://pos.tigo.com.gt/">https://pos.tigo.com.gt/</a></small></p>
-            <p class="project-description">Fue el resultado de un desarrollo de 2 años trabajando en la construcción del webapp y
-              del aplicativo móvil.
-            </p>
-            <p class="project-description">
-            Actualmente mantengo el soporte de servidores implementando tecnologías de alta disponibilidad para la base de datos
-              con mariadb platform x5.
-            </p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/tigoPos.png" alt="Proyecto TigoPOS">
-          </figure>
-        </article>
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Genius TigoBusiness</h3>
-            <h6 class="project-course">PHP / Javascript</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 01/02/2018 a la fecha</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="http://ventas.tigo.com.gt/">http://ventas.tigo.com.gt/</a></small></p>
-            <p class="project-description">Desarrollo de herramienta web para la creación rápida y segura de cotizaciones,
-              generando el proceso correcto para la venta de productos y servicios ofrecidos por TigoBusiness.
-            </p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/logo_genius.png" alt="Proyecto TigoPOS">
-          </figure>
-        </article>
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Albacinema</h3>
-            <h6 class="project-course">PHP / Javascript</h6>
-            <p class="project-date"><small><strong>Fecha inicio:</strong> 01/02/2020</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://albacinema.com.gt/">https://albacinema.com.gt/</a></small></p>
-            <p class="project-description">Desarrollo de nuevo sitio web para cines guatemaltecos Albacinema intengrando
-              pagos con tarjeta de crédito y conexiones con servicios internos para generación de tickets.
-            </p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/logo_albacinema.png" alt="Proyecto TigoPOS">
-          </figure>
-        </article>
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Bono familia (para comercios)</h3>
-            <h6 class="project-course">PHP / Javascript</h6>
-            <p class="project-date"><small><strong>Fecha inicio:</strong> 01/04/2020</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://bonofamilia.com.gt/">https://bonofamilia.com.gt/</a></small></p>
-            <p class="project-description">
-              Desarrollo de aplicación web para comercios para facilitar el cobro del bono familia mediante una transaccion
-              aprobada y autorizada por Visanet Guatemala.
-            </p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/logo_bonofam.png" alt="Proyecto TigoPOS">
-          </figure>
-        </article>
-      </div>
-    <section id="eventos" class="skills">
-      <h1>My skills</h1>
-      <div class="content-skills">
-        <!-- SKILLS FRONT -->
-        <article class="skills-card">
-          <h4>FRONTEND WEB</h4>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>CSS</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>JavaScript Vanilla</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Webpack</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>ReactJs</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-        </article>
-        <!-- SKILLS SYSADMIN -->
-        <article class="skills-card">
-          <h4>SYSADMIN</h4>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Linux manage (Centos,Redhat, Ubuntu server)</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Docker</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Kubernetes</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>DEVOPS</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-        </article>
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <!-- <blockquote>
+          <h2>
+            A Software Developer with a passion for Backend Development and Artificial Intelligence.
 
-      </div>
-      <div class="content-skills">
-        <!-- SKILLS MOVIL -->
-        <article class="skills-card">
-          <h4>Móvil</h4>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Java for Android</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>React Native</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Kotlin</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Swift IOS</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Flutter</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-        </article>
-        <!-- SKILLS BACK -->
-        <article class="skills-card">
-          <h4>BACKEND</h4>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>PHP</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Phyton</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Django</p>
-              <p class="level">Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Mariadb / Mysql</p>
-              <p class="level">Database advanced</p>
-            </div>
-          <div class="skill-card_content">
-            <div class="skill-tech">
-              <p>Node JS</p>
-              <p class="level">Advanced</p>
-            </div>
-          </div>
-          </div>
-        </article>
+          </h2>
+        </blockquote> -->        
+        <p>          
+          Results-oriented professional with 11 years of experience and proven knowledge of application development, capacity planning, and programing. Aiming to leverage my skills to successfully fill the Software engineer role at you company.
+          I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
+        </p>
+        <p>
+          <ul>
+            <li><b>Frontend:</b> Javascript vanilla, ReactJs, CSS, Webpack</li>
+            <li><b>Backend:</b> NodeJs, PHP, Python</li>
+            <li><b>Databases:</b> MySQL, MariaDB, MongoDB</li>
+            <li><b>Mobile:</b> Java for Android, Kotlin, Swift, React Native, Dart & Flutter</li>
+            <li><b>Tools & Technologies:</b> Git, Docker, AWS, Jenkins, JIRA</li>
+          </ul>
+          
+        </p>
+          
+        <!-- <p>
+          
+          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
+        </p> -->
+        <p>
+          &nbsp;
+        </p>
+        <!-- <p>
+          Another Paragraph
+        </p>  -->
+        <p>
+        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
+          href="https://flutter.dev/?gclsrc=ds&gclsrc=ds">Flutter</a>&nbsp;//&nbsp;<a
+          aria-label="Navigate to the Full Stack React Native homepage"
+          href="https://reactnative.dev/">React Native</a>&nbsp;//&nbsp;<a
+          aria-label='Navigate to the article "Scalable CSS"'
+          href="https://nodejs.dev/learn">Node.js</a>
+        </p>
       </div>
     </section>
 
+
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.ezcorp.com/English/overview/default.aspx" target="_blank"><img alt="ezcorp logo"
+                    src="/assets/img/logo_acuedd.jpg" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.ezcorp.com/English/overview/default.aspx" target="_blank"
+                      class="teal-text hoverline">Frelancer</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Software Engineer</div>
+            <ul>
+              <li>Coding backend services with nodejs and php.</li>
+              <li>Write code for mobile app with technologies like Flutter and React Native.</li>              
+              <li>
+                Developed and managed the mobile solution using react native to develop it.                 
+              </li>
+              <li>Improved the development timing reducing bugs and implements a good branching strategy </li>
+              <li>
+                Worked on mobile applications targeting selling vendors, pawn brokers and admin users;
+              </li>                          
+            </ul>
+            <ul>
+              <li>
+                <b>Projects with:</b> Ezcorp, Homeland, Bono Familia Guatemala
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Tools:</b> React Native, Flutter & Dart, NodeJs, PHP, Docker and Jenkins
+              </li>
+            </ul>
+          </div>          
+          <div class="card-action">
+            <span>Nov 2019 - Feb 2022 | Guatemala, Guatemala</span>
+          </div>
+        </div>
+
+        <!-- Experience chief -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://homeland.com.gt/" target="_blank"><img alt="Homeland logo"
+                    src="/assets/img/logo_homeland.png" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://homeland.com.gt/" target="_blank"
+                      class="teal-text hoverline">Homeland S.A.</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Chief Software Development</div>
+            <ul>
+              <li>
+                Contribute to research and apply better practices in the structure of code. 
+              </li>
+              <li>
+                Create schedules and work plans and be accountable for managing a budget.
+              </li>
+              <li>
+                Provide innovate solutions to complex problems and communicate progress 
+              </li>
+              <li>
+                Liaise with senior management to report on project and to present project's needs.                
+              </li>
+              <li>
+                Manage Linux servers to deploy projects. 
+              </li>
+              <li>
+                Help to build and manage the software development teams.
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Tools:</b> PHP, Python, Javascript, React, React-native. Jenkins, Docker
+              </li>
+            </ul>            
+          </div>
+          <div class="card-action">
+            <span>May 2016 - Nov 2019 | Guatemala, Guatemala</span>
+          </div>
+        </div>
+
+        <!-- Experience Fullstack dev -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://homeland.com.gt/" target="_blank"><img alt="Homeland logo"
+                    src="/assets/img/logo_homeland.png" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://homeland.com.gt/" target="_blank"
+                      class="teal-text hoverline">Homeland S.A.</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Fullstack Developer</div>
+            <ul>
+              <li>
+                Design algorithms and flowcharts to create new software.               
+              </li>
+              <li>
+                Develop software in different languages like PHP, javascript and python. 
+              </li>
+              <li>
+                Troubleshooting, debugging, maintaining and improving existing software. 
+              </li>
+              <li>
+                Manage linux servers to deploy solutions in cloud services.
+              </li>
+              <li>
+                Migrate old code to new technologies in different projects.
+              </li>
+              <li>
+                Testing and deploying programs and applications.
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Tools:</b> PHP, Javascript, Java for Android, Swift.
+              </li>
+            </ul>            
+          </div>
+          <div class="card-action">
+            <span>Aug 2013 - Apr 2016 | Guatemala, Guatemala</span>
+          </div>
+        </div>
+        
+        <!-- Experience Junior dev -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://homeland.com.gt/" target="_blank"><img alt="Homeland logo"
+                    src="/assets/img/logo_homeland.png" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://homeland.com.gt/" target="_blank"
+                      class="teal-text hoverline">Homeland S.A.</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Junior Developer</div>
+            <ul>
+              <li>
+                Write code for different webpages in PHP and Javascript.
+              </li>
+              <li>
+                Implements solutions to make electronic invoice in Guatemala.
+              </li>
+              <li>
+                Troubleshooting, debugging, maintaining and improving existing software. 
+              </li>
+              <li>
+                Create new solutions to software of schools. 
+              </li>              
+              <li>
+                Testing and deploying programs and applications.
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Tools:</b> PHP, Javascript.
+              </li>
+            </ul>            
+          </div>
+          <div class="card-action">
+            <span>Aug 2010 - Jul 2013 | Guatemala, Guatemala</span>
+          </div>
+        </div>
+
+        <!-- Experience Sopesa-->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <img alt="Sopesa logo" src="/assets/img/logo_sopesa.png" class="responsive-img center-block" />
+
+              </div>
+
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.linkedin.com/company/sopesagt/?originalSubdomain=gt" class="teal-text hoverline">SOPESA</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Accounting assistance</div>
+            <ul>
+              <li>
+                Pay taxes, inventory adjustment, organize the bookkeeping processes of the company. 
+              </li>
+              <li>
+                Evaluate financial budgets and track expenses.
+              </li>              
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Oct 2017 - Jul 2020 | Guatemala, Guatemala</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+          
+          <!-- Acapella Music-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="/assets/img/logo_acapella.png" style="height: 100%; width: 100%; object-fit: cover;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Acapella Music App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A music app to reproduce gospel songs in acapella, 
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Flutter, Firebase, PHP, Javascript, </li>
+                  <li>App using to learn and test Flutter</li>
+                  <li>Create backend and app mobile solution</li>
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>Search and filter songs based on language and singer.</li>
+                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
+                  <li>Scroll through recently played/viewed songs.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.acuedd.idcmusic" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/acuedd/IDCMusic"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--TigoPOS-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_mobile_tigopos.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">TigoPOS<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A payment gateway with support to make payments through card reader and app mobile.                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> Java for Android, Swift iOS</li>
+                  <li><b>Frontend:</b> Javascript Vanilla</li>
+                  <li><b>Backend:</b> PHP</li>
+                  <li>A payment gateway with support to make payments through card reader and app mobile.</li>
+                  <li>Implements a solutions of high availability in database with mariadb platform x5 </li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://pos.tigo.com.gt" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.xpos.tigo" target="_blank" data-position="top"
+                    data-tooltip="View Mobile App"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--TigoGenius-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_genius.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Tigo Genius<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Tool to make a fast estimates to sell products, mobile devices and plans for a Telco Tigo Guatemala
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> React Native</li>
+                  <li><b>Frontend:</b> Javascript Vanilla</li>
+                  <li><b>Backend:</b> PHP</li>
+                  <li>A web tool to make estimates for sell with app to sellers </li>
+                  <li>Implements a solutions to deploy with docker containers and fast deploy with Jenkins</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://ventas.tigo.com.gt" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=com.tigogenius" target="_blank" data-position="top"
+                    data-tooltip="View Mobile app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Bono Familia-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_bonofam.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Bono Familia<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A payment gateway to sell with government support for COVID-19
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> React Native</li>
+                  <li><b>Frontend:</b> ReactJS</li>
+                  <li><b>Backend:</b> PHP</li>
+                  <li>A payment gateway to receive government aid payments for covid-19</li>
+                  <li>Implements a solutions to deploy with docker containers</li>
+
+                </ul>                
+              </div>
+            </div>
+          </div>
+          
+          <!--DSGo-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_dgo.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">DSGo app<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  App to connect with services of Colegio Alemán de Guatemala
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> Flutter & Dart</li>                  
+                  <li>Implement calendar to know events of school</li>
+                  <li>Provide info about charges and payments of each student and family, related at your user</li>
+                  <li>Provide functionality to watch and know news about School</li>
+                  <li>Getting info about notifications and evaluations of each student associated at your user.</li>
+                  <li>App to Android and iOS</li>
+                </ul> 
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=homeland.com.gt.dsg" target="_blank" data-position="top"
+                    data-tooltip="View app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>               
+              </div>
+            </div>
+          </div>
+
+          <!--Evelyn Rogers-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_evelyn_rogers.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Evelyn Rogers<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  App to connect with services of Colegio Evelyn Rogers Guatemala
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> Flutter & Dart</li>                  
+                  <li>Implement calendar to know events of school</li>
+                  <li>Provide info about charges and payments of each student and family, related at your user</li>
+                  <li>Provide functionality to watch and know news about School</li>
+                  <li>Getting info about notifications and evaluations of each student associated at your user.</li>
+                  <li>App to Android and iOS</li>
+                </ul> 
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=homeland.com.gt.evelynrogersapp" target="_blank" data-position="top"
+                    data-tooltip="View app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>               
+              </div>
+            </div>
+          </div>
+
+           <!--Humboldt-->
+           <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_humboldt.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Colegio Humboldt Costa Rica<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  App to connect with services of Colegio Humboldt Costa Rica
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> Flutter & Dart</li>                  
+                  <li>Implement calendar to know events of school</li>
+                  <li>Provide info about charges and payments of each student and family, related at your user</li>
+                  <li>Provide functionality to watch and know news about School</li>
+                  <li>Getting info about notifications and evaluations of each student associated at your user.</li>
+                  <li>App to Android and iOS</li>
+                </ul> 
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.humboldt" target="_blank" data-position="top"
+                    data-tooltip="View app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>               
+              </div>
+            </div>
+          </div>
+
+          <!--Espiga-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_nutrihuevo.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">NutriHuevo<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  App of Espiga group to connect with its software ERP
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> Flutter & Dart</li>                  
+                  <li>Allows to billing through this app</li>
+                  <li>Check and observe availability of their inventory</li>
+                  <li>Provide tool to print a bill and closing report</li>
+                  <li>Allows to make an order </li>
+                  <li>App to Android</li>
+                </ul> 
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.nutrihuevo" target="_blank" data-position="top"
+                    data-tooltip="View app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>               
+              </div>
+            </div>
+          </div>
+
+           <!--TigoPOS cobradores-->
+           <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/logo_pos_cobradores.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">TigoPOS cobradores<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  App of Tigo Guatemala to provide a tool to make a sell and control of sells and cash control
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> React Native</li>                  
+                  <li>Allows to make a voucher to cash control</li>
+                  <li>Check and observe availability of their inventory</li>
+                  <li>Provide tool to make a closing report</li>
+                  <li>Connect with their CRM software</li>
+                  <li>Manage of different roles of users and their access</li>
+                  <li>App to Android</li>
+                </ul> 
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=xposcobradores.gt.com.homeland" target="_blank" data-position="top"
+                    data-tooltip="View app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>               
+              </div>
+            </div>
+          </div>
+
+          <!--Samsung-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/samsung_videos.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Samsung videos Tigo<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  App to show advertising videos in stores of Tigo Guatemala
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Mobile:</b> React Native</li>                  
+                  <li>Allow to show advertising videos in devices like demo mode</li>
+                  <li>Connect this app with TigoPOS to make a good flows between those apps</li>
+                  <li>Show different videos in different stores</li>                                
+                  <li>App to Android</li>
+                </ul> 
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.advertising_samsung" target="_blank" data-position="top"
+                    data-tooltip="View app"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>               
+              </div>
+            </div>
+          </div>
+          <!-- ************* -->
+        </div>
+      </div>
+    </section>
     
-    <section id="contacto" class="contact">
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
       <div class="container">
-        <form action="/suscripcion/" class="form-email">
-          <h3>¿Creamos algo juntos?</h3>
-          <input type="text" placeholder="Déjame tu email" id="email">
-          <button id="btnSends" type="button">Enviar</button>
-        </form>
-        <div class="social">
-          <a href="https://twitter.com/AcuEdd" class="social-link twitter"></a>
-          <a href="https://www.facebook.com/acuedd/" class="social-link facebook"></a>
-          <a href="https://github.com/acuedd" class="social-link github"></a>
-          <a href="https://www.instagram.com/acuedd/" class="social-link instagram"></a>
+        <!-- Languages web -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Web</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/php-logo-20747.png" class="responsive-img" />PHP
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/nodejs.png" class="responsive-img" />PHP
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/javascript.png" class="responsive-img" />Javascript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/reactjs.png" class="responsive-img" />ReactJs
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+              </div>              
+            </div>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Mobile</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/Flutter.png" class="responsive-img" />Flutter
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/dart.png" class="responsive-img" />Dart
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/colorreact_native4._resized.png" class="responsive-img" />React Native
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/Java_en_Android.png" class="responsive-img" />Java for Android
+              </div>            
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/Kotlin_Icon.png" class="responsive-img" />Kotlin
+              </div>              
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/swift.png" class="responsive-img" />Swift
+              </div>
+            </div>
+          </div>
+        </div>        
+        
+        <!-- Databases-->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mariadb_logo_icon_168996.png" class="responsive-img" />MariaDB
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/logo_mongodb.png" class="responsive-img" />MongoDB
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/Moby-logo.png" class="responsive-img" />Docker
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
+              </div>              
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" />Shell script
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/Jenkins_logo.svg" class="responsive-img" />Jenkins
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">                
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/certificate_Ios_developer.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text"> IOS Mobile   developer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/certificate_backend_php.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Desarrollo Web Backend PHP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/certificate_flutter_advanced.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text"> Flutter advanced</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/certificate_reactjs.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text"> ReactJs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seventh Section: Education -->
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://www.umg.edu.gt/" target="_blank" class="teal-text hoverline">Universidad Mariano Gálvez</a></span>
+                </p>
+                <p class="brown-text">Guatemala, Guatemala</p>
+                <p>
+                  <b>Degree: </b>Bachelor degree in computer Science, Software Engineering
+                </p>
+
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                    <ul>
+                      <li>Data Structures and Algorithms</li>
+                      <li>Database Management Systems</li>
+                      <li>Operating Systems</li>
+                      <li>Machine Learning</li>
+                      <li>Computer Vision</li>
+                    </ul>
+                  </p>
+
+                </ul>
+              </div>
+            </div>            
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://www.umg.edu.gt/" target="_blank" class="teal-text hoverline">Universidad Mariano Gálvez</a></span>
+                </p>
+                <p class="brown-text">Guatemala, Guatemala</p>
+                <p>
+                  <b>Degree: </b>Completed coursework towards MBA                  
+                </p>
+                    
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="" target="_blank" class="teal-text hoverline">Mundo E & Universidad de Córdoba</a></span>
+                </p>
+                <p class="brown-text">Online, Argentina</p>
+                <p>
+                  <b>Degree: </b>DevOPS
+                </p>
+                    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
         </div>
       </div>
     </section>
-    <footer class="footer">
+
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
-        <div>
-          <p>Acuedd Productions <img src="images/logo_acuedd.jpg" width="40" alt="platzi"></p>
-        </div>
-        <div>
-          <p>
-            Designed with ❤️
-          </p>
-        </div>
+        <p>
+          <a aria-label="Call Edward" data-position="top" data-tooltip="Call Edward"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Edward">+502 30468139</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Edward" href="mailto:acuedd@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Edward" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:acuedd@gmail.com"
+              class="hoverline">acuedd@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Edward on GitHub" href="https://github.com/acuedd" target="_blank"
+            data-position="top" data-tooltip="View Edward on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Edward on Github" href="https://github.com/acuedd" class="hoverline"
+              target="_blank">https://github.com/acuedd</a></a>
+        </p>
+        <p>
+          <a aria-label="View Edward on LinkedIn" href="https://www.linkedin.com/in/acuedd/" target="_blank"
+            data-position="top" data-tooltip="View Edward on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Edward on LinkedIn" href="https://www.linkedin.com/in/acuedd/"
+              class="hoverline" target="_blank">linkedin.com/in/acuedd</a></a>
+        </p>
       </div>
-    </footer>
-    <script>
-      // console.log('Hola mundo! es mi primera linea en JS');
-      const ipad = window.matchMedia('screen and (max-width: 767px)')
-      const menu = document.querySelector('.menu');
-      // console.log(menu);
-      const burgerButton = document.querySelector('#burger-menu');
-      // console.log(burgerButton);
+    </section>
+  </main>
+
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Software engineer", "Developer", "Fast Learner"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
 
 
-      ipad.addListener(validation)
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-      function validation(event) {
-        if (event.matches) {
-          burgerButton.addEventListener('click', hideShow)
-        } else {
-          burgerButton.removeEventListener('click', hideShow)
-        }
-      }
-      validation(ipad);
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
 
-
-      function hideShow() {
-        if (menu.classList.contains('is-active')) {
-          menu.classList.remove('is-active');
-        } else {
-          menu.classList.add('is-active');
-        }
-      }
-
-      let btnSend = document.querySelector("#btnSends");
-      let email = document.querySelector("#email");
-      console.log(btnSend)
-
-      btnSend.addEventListener("click", (e)=>{
-        let strMessage = `https://api.whatsapp.com/send?phone=50230468139,&text=Hola%20he%20visto%20tu%20página%20,%20te%20envío%20mi%20mail%20 ` + email.value;
-        window.open(strMessage,"_blank");
-      });
-
-    </script>
-  </body>
 </html>
