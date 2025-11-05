@@ -14,10 +14,12 @@
   })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS - Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Edward Acu | Software Engineer</title>
@@ -78,123 +80,97 @@
   </noscript>
 
   <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
+  <!-- Nav class 1 - Desktop Sidebar -->
+  <nav id="navbar-side" class="d-none d-md-block sidebar-nav">
     <ul class="side-nav fixed section table-of-contents">
 
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-          <img src="/assets/img/acuedd.jpg" class="circle img-responsive profile-pic" alt="avatar">
+          <img src="/assets/img/acuedd.jpg" class="rounded-circle img-fluid profile-pic" alt="avatar">
         </a>
       </li>
 
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
+        <a aria-label="Navigate to the About section" href="#about" class="nav-link-effect teal-text"><i
+            class="fas fa-user small"></i><span>About</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+          class="nav-link-effect teal-text"><i
+            class="fas fa-briefcase small"></i><span>Experience</span></a>
       </li>
 
       <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+        <a aria-label="Navigate to the Projects section" href="#projects" class="nav-link-effect teal-text"><i
+            class="fas fa-project-diagram small"></i><span>Projects</span></a>
       </li>
 
       <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
+        <a aria-label="Navigate to the Skills section" href="#skills" class="nav-link-effect teal-text"><i
+            class="fas fa-code small"></i><span>Skills</span></a>
       </li>
 
       <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
+        <a aria-label="Navigate to the Education section" href="#education" class="nav-link-effect teal-text"><i
+            class="fas fa-graduation-cap small"></i><span>Education</span></a>
       </li>
 
       <li class="bold">
-        <!--
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+        <a aria-label="Navigate to the Contact section" href="#contact" class="nav-link-effect teal-text"><i
+            class="fas fa-envelope small"></i><span>Contact</span></a>
       </li>
 
       <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
         <a aria-label="Open Ed's resume in a new tab" href="https://acuedd.github.io/assets/resume/Resume_Edward_G_Acu.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+        class="nav-link-effect teal-text"><i class="fas fa-file-alt small"></i><span>Resume</span></a>
       </li>
     </ul>
   </nav>
 
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <!-- Nav class 2 - Mobile Top Bar -->
+  <nav class="d-md-none mobile-nav trigger">
+    <button aria-label="Toggle visibility of the mobile navbar" class="navbar-toggler" type="button">
+      <i class="fas fa-bars"></i>
+    </button>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Ed Acu</a><span class="black-text">Software Developer</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Ed Acu</a><span class="text-dark">Software Developer</span>
     </div>
   </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
+  <!-- Nav class 3 - Mobile Sidebar -->
+  <nav class="d-md-none">
+    <ul id="slide-out" class="side-nav mobile-menu">
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
+        <a aria-label="Navigate to the About section" href="#about" class="nav-link-effect teal-text"><i
+            class="fas fa-user small"></i><span>About</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+          class="nav-link-effect teal-text"><i
+            class="fas fa-briefcase small"></i><span>Experience</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+        <a aria-label="Navigate to the Projects section" href="#projects" class="nav-link-effect teal-text"><i
+            class="fas fa-project-diagram small"></i><span>Projects</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
+        <a aria-label="Navigate to the Skills section" href="#skills" class="nav-link-effect teal-text"><i
+            class="fas fa-code small"></i><span>Skills</span></a>
       </li>
 
       <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
+        <a aria-label="Navigate to the Education section" href="#education" class="nav-link-effect teal-text"><i
+            class="fas fa-graduation-cap small"></i><span>Education</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+        <a aria-label="Navigate to the Contact section" href="#contact" class="nav-link-effect teal-text"><i
+            class="fas fa-envelope small"></i><span>Contact</span></a>
       </li>
       <li class="bold">
         <a aria-label="Open Ed's Resume in a new tab"
           href="https://acuedd.github.io/assets/resume/EDWARD_ACU_SOFTWARE_ENGINEER.pdf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+          class="nav-link-effect teal-text"><i class="fas fa-file-alt small"></i><span>Resume</span></a>
       </li>
     </ul>
   </nav>
@@ -204,29 +180,57 @@
     <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
       <div class="overlay"></div>
+
+      <!-- Engineering Background Elements -->
+      <div class="code-background">
+        <div class="code-line code-line-1">{</div>
+        <div class="code-line code-line-2">function</div>
+        <div class="code-line code-line-3">const</div>
+        <div class="code-line code-line-4">&lt;/&gt;</div>
+        <div class="code-line code-line-5">import</div>
+        <div class="code-line code-line-6">export</div>
+        <div class="code-line code-line-7">class</div>
+        <div class="code-line code-line-8">}</div>
+        <div class="code-line code-line-9">=&gt;</div>
+        <div class="code-line code-line-10">async</div>
+      </div>
+
+      <!-- Floating Tech Icons -->
+      <div class="floating-icons">
+        <div class="floating-icon" data-icon="&lt;/&gt;"><i class="fab fa-html5"></i></div>
+        <div class="floating-icon" data-icon="{}"><i class="fab fa-js"></i></div>
+        <div class="floating-icon" data-icon="()"><i class="fab fa-react"></i></div>
+        <div class="floating-icon" data-icon="[]"><i class="fab fa-node-js"></i></div>
+        <div class="floating-icon" data-icon="=>"><i class="fab fa-python"></i></div>
+        <div class="floating-icon" data-icon="#"><i class="fas fa-code"></i></div>
+      </div>
+
       <div class="container">
         <div class="col-md-9">
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
+            <div class="caption" data-aos="fade-up" data-aos-delay="100">
+              <div class="intro-badge" data-aos="zoom-in" data-aos-delay="50">
+                <i class="fas fa-code"></i>
+                <span>Software Engineer</span>
+              </div>
               <h2>Hi, I'm <span class="teal">Edward Acu.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 600;"></span></h5>
               <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
             </div>
-            <div class="social">
+            <div class="social" data-aos="fade-up" data-aos-delay="300">
               <a href="https://www.linkedin.com/in/acuedd/" target="_blank">
                 <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
+                  <i class="fab fa-linkedin"></i>
                 </button>
               </a>
               <a href="https://github.com/acuedd/" target="_blank">
                 <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
+                  <i class="fab fa-github"></i>
                 </button>
               </a>
               <a href="https://www.instagram.com/acuedd/?hl=en" target="_blank">
                 <button class="icon-btn instagram">
-                  <i class="fa fa-instagram"></i>
+                  <i class="fab fa-instagram"></i>
                 </button>
               </a>
 
@@ -244,7 +248,7 @@
                   </span>
               </a> -->
             </div>
-            <div class='buttons'>
+            <div class='buttons' data-aos="fade-up" data-aos-delay="500">
               <a href="#about" class="readme">Read More</a>
               <a href="#contact" class="contactme">Contact Me</a>
             </div>
@@ -255,71 +259,47 @@
 
     <!-- Second Section: About -->
     <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
+      <h3 class="page-title white-text teal" data-aos="fade-down"><i class="fas fa-user me-2"></i>About</h3>
       <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
-
-          </h2>
-        </blockquote> -->
-        <p>
-          Results-oriented professional with 11 years of experience and proven knowledge of application development, capacity planning, and programing.
-          Aiming to leverage my skills to successfully fill the Software engineer role at you company. Fullstack developer specialist in backend solutions with PHP, nodejs, and mobile solutions working
-          with hybrid apps with React-Native and Flutter, also I can work at frontend with solutions building it with ReactJs and javascript vanilla.
-          I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. I have good communications skills using Agile methodologies like Scrum.
+        <h4 class="brown-text light mb-4" data-aos="fade-up">Professional Summary</h4>
+        <p data-aos="fade-up">
+          Results-oriented software engineer with 11 years of experience and a proven track record in application development, capacity planning, and programming. I aim to leverage my full-stack expertise to contribute effectively as a Software Engineer at your company.
         </p>
-        <p>
-          <ul>
-            <li><b>Frontend:</b> Javascript vanilla, ReactJs, CSS, Webpack</li>
-            <li><b>Backend:</b> NodeJs, PHP, Python</li>
-            <li><b>Databases:</b> MySQL, MariaDB, MongoDB</li>
-            <li><b>Mobile:</b> Java for Android, Kotlin, Swift, React Native, Dart & Flutter</li>
-            <li><b>Tools & Technologies:</b> Git, Docker, AWS, Jenkins, JIRA</li>
-          </ul>
-
+        <p data-aos="fade-up">
+          Specialized in backend development with PHP, Node.js, TypeScript, C#, and Ruby on Rails, as well as mobile app development using React Native and Flutter. On the frontend, I build scalable and responsive interfaces using React.js, Next.js, and vanilla JavaScript.
+        </p>
+        <p data-aos="fade-up">
+          I am passionate about problem-solving, clean code, and system design. I strive to deliver excellence in every project and maintain a proactive mindset in Agile environments following Scrum methodologies.
         </p>
 
-        <!-- <p>
+        <p class="text-center my-4" data-aos="fade-up" style="font-size: 24px; color: #008073;">⸻</p>
 
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.
-        </p> -->
-        <p>
-          &nbsp;
-        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <p>
-        <strong>Current Focus</strong>:&nbsp;
-          <a aria-label='Navigate to the article "Scalable CSS"'
-            href="https://nodejs.dev/learn">Node.js</a>&nbsp;//&nbsp;
-          <a aria-label="Navigate to the Inclusive Design Patterns homepage"
-            href="https://flutter.dev/?gclsrc=ds&gclsrc=ds">Flutter</a>&nbsp;//&nbsp;
-          <a aria-label="Navigate to the Full Stack React Native homepage"
-            href="https://reactnative.dev/">React Native</a>&nbsp;//&nbsp;
-        </p>
-        <p>
-          &nbsp;
-        </p>
+        <h4 class="brown-text light mb-4" data-aos="fade-up">Technical Skills</h4>
+        <ul class="technical-skills-list" data-aos="fade-up">
+          <li><strong>Frontend:</strong> JavaScript (Vanilla), TypeScript, React.js, Next.js, CSS, Webpack</li>
+          <li><strong>Backend:</strong> Node.js, PHP, C#, Ruby on Rails, Python</li>
+          <li><strong>Databases:</strong> MySQL, MariaDB, MongoDB</li>
+          <li><strong>Mobile:</strong> Java (Android), Kotlin, Swift, React Native, Dart & Flutter</li>
+          <li><strong>Tools & Technologies:</strong> Git, Docker, AWS, Azure, Jenkins, JIRA</li>
+        </ul>
       </div>
     </section>
 
 
     <!-- Third Section: Experience -->
     <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
+      <h3 class="page-title white-text teal" data-aos="fade-down"><i class="fas fa-briefcase me-2"></i>Experience</h3>
       <div class="container">
         <!-- Software engineer -->
          <!--
         <div class="card">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <a href="https://www.telus.com/" target="_blank"><img alt="telus logo"
-                    src="/assets/img/TELUS_TAGLINE_HORIZONTAL_EN.svg" class="responsive-img center-block" /></a>
+                    src="/assets/img/TELUS_TAGLINE_HORIZONTAL_EN.svg" class="img-fluid mx-auto d-block" /></a>
               </div>
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://www.telus.com/" target="_blank"
                       class="teal-text hoverline"> Telus </a></span>
@@ -332,12 +312,12 @@
               <li>Write code for micro frontend with react js and redux.</li>
               <li>Applying solutions for bugs and implement new features to improve code.</li>
               <li>
-                Working for home phone solutions. 
+                Working for home phone solutions.
               </li>
-            </ul>            
+            </ul>
             <ul>
               <li>
-                <b>Tools:</b> NodeJs, ReactJS, Redux, Dynatrace, OpenShift, Jenkins, Jira, Contentul 
+                <b>Tools:</b> NodeJs, ReactJS, Redux, Dynatrace, OpenShift, Jenkins, Jira, Contentul
               </li>
             </ul>
           </div>
@@ -347,15 +327,14 @@
         </div>-->
 
         <!-- Fullstack Developer rain-->
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <a href="https://www.rainpos.com/" target="_blank"><img alt="rainpos logo"
-                    src="/assets/img/rain_retail_pos_logo_black_letters_2.svg" class="responsive-img center-block" /></a>
+                    src="/assets/img/rain_retail_pos_logo_black_letters_2.svg" class="img-fluid mx-auto d-block" /></a>
               </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://www.rainpos.com/" target="_blank"
                       class="teal-text hoverline"> RainPOS </a></span>
@@ -386,17 +365,17 @@
             <span>Apr 2022 - current| Guatemala, Guatemala</span>
           </div>
         </div>
-      
+
         <!-- Experience chief -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <a href="https://homeland.com.gt/" target="_blank"><img alt="Homeland logo"
-                    src="/assets/img/logo_homeland.png" class="responsive-img center-block" /></a>
+                    src="/assets/img/logo_homeland.png" class="img-fluid mx-auto d-block" /></a>
               </div>
               <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://homeland.com.gt/" target="_blank"
                       class="teal-text hoverline">Homeland S.A.</a></span>
@@ -436,15 +415,15 @@
         </div>
 
         <!-- Freelancer experience -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <a href="https://www.ezcorp.com/English/overview/default.aspx" target="_blank"><img alt="ezcorp logo"
-                    src="/assets/img/logo_acuedd.jpg" class="responsive-img center-block" /></a>
+                    src="/assets/img/logo_acuedd.jpg" class="img-fluid mx-auto d-block" /></a>
               </div>
               <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://www.ezcorp.com/English/overview/default.aspx" target="_blank"
                       class="teal-text hoverline">Freelancer</a></span>
@@ -480,15 +459,15 @@
         </div>
 
         <!-- Experience Fullstack dev -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <a href="https://homeland.com.gt/" target="_blank"><img alt="Homeland logo"
-                    src="/assets/img/logo_homeland.png" class="responsive-img center-block" /></a>
+                    src="/assets/img/logo_homeland.png" class="img-fluid mx-auto d-block" /></a>
               </div>
               <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://homeland.com.gt/" target="_blank"
                       class="teal-text hoverline">Homeland S.A.</a></span>
@@ -528,15 +507,15 @@
         </div>
 
         <!-- Experience Junior dev -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <a href="https://homeland.com.gt/" target="_blank"><img alt="Homeland logo"
-                    src="/assets/img/logo_homeland.png" class="responsive-img center-block" /></a>
+                    src="/assets/img/logo_homeland.png" class="img-fluid mx-auto d-block" /></a>
               </div>
               <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://homeland.com.gt/" target="_blank"
                       class="teal-text hoverline">Homeland S.A.</a></span>
@@ -573,16 +552,16 @@
         </div>
 
         <!-- Experience Sopesa-->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
-                <img alt="Sopesa logo" src="/assets/img/logo_sopesa.png" class="responsive-img center-block" />
+              <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
+                <img alt="Sopesa logo" src="/assets/img/logo_sopesa.png" class="img-fluid mx-auto d-block" />
 
               </div>
 
               <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
+              <div class="col-12 col-md-10">
                 <p>
                   <span class="card-title"><a href="https://www.linkedin.com/company/sopesagt/?originalSubdomain=gt" class="teal-text hoverline">SOPESA</a></span>
                 </p>
@@ -608,19 +587,19 @@
 
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
+      <h3 class="page-title white-text teal" data-aos="fade-down"><i class="fas fa-project-diagram me-2"></i>Projects</h3>
       <div class="container">
         <div class="row">
 
           <!-- Acapella Music-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="music streaming app" src="/assets/img/logo_acapella.png" style="height: 100%; width: 100%; object-fit: cover;" class="activator" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Acapella Music App<i
-                    class="mdi-navigation-more-vert right"></i></span>
+                    class="fas fa-ellipsis-v float-end"></i></span>
                 <p>
                   A music app to reproduce gospel songs in acapella,
                 </p>
@@ -629,7 +608,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Tools:</b> Flutter, Firebase, PHP, Javascript, </li>
                   <li>App using to learn and test Flutter</li>
@@ -644,20 +623,20 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.acuedd.idcmusic" target="_blank" data-position="top"
                     data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                   <a aria-label="Visit the GitHub repo for  project" href="https://github.com/acuedd/IDCMusic"
                     target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle" data-aos="zoom-in"><i
+                      class="fab fa-github"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
           <!--Albacinema-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_albacinema.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -672,7 +651,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Frontend:</b> Javascript vanilla</li>
                   <li><b>Backend:</b> PHP and Laravel</li>
@@ -683,16 +662,16 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://albacinema.com.gt/" target="_blank" data-position="top"
                     data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
           <!--TigoPOS-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_mobile_tigopos.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -706,7 +685,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> Java for Android, Swift iOS</li>
                   <li><b>Frontend:</b> Javascript Vanilla</li>
@@ -718,19 +697,19 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://pos.tigo.com.gt" target="_blank" data-position="top"
                     data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.xpos.tigo" target="_blank" data-position="top"
                     data-tooltip="View Mobile App"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
           <!--TigoGenius-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_genius.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -745,7 +724,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> React Native</li>
                   <li><b>Frontend:</b> Javascript Vanilla</li>
@@ -757,20 +736,20 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://ventas.tigo.com.gt" target="_blank" data-position="top"
                     data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=com.tigogenius" target="_blank" data-position="top"
                     data-tooltip="View Mobile app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
           <!--Bono Familia-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_bonofam.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -785,7 +764,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> React Native</li>
                   <li><b>Frontend:</b> ReactJS</li>
@@ -799,8 +778,8 @@
           </div>
 
           <!--DSGo-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_dgo.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -815,7 +794,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> Flutter & Dart</li>
                   <li>Implement calendar to know events of school</li>
@@ -827,16 +806,16 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=homeland.com.gt.dsg" target="_blank" data-position="top"
                     data-tooltip="View app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
           <!--Evelyn Rogers-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_evelyn_rogers.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -851,7 +830,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> Flutter & Dart</li>
                   <li>Implement calendar to know events of school</li>
@@ -863,16 +842,16 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=homeland.com.gt.evelynrogersapp" target="_blank" data-position="top"
                     data-tooltip="View app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
            <!--Humboldt-->
-           <div class="col s12 m6 l4">
-            <div class="card medium">
+           <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_humboldt.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -887,7 +866,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> Flutter & Dart</li>
                   <li>Implement calendar to know events of school</li>
@@ -899,16 +878,16 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.humboldt" target="_blank" data-position="top"
                     data-tooltip="View app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
           <!--Espiga-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_nutrihuevo.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -923,7 +902,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> Flutter & Dart</li>
                   <li>Allows to billing through this app</li>
@@ -935,16 +914,16 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.nutrihuevo" target="_blank" data-position="top"
                     data-tooltip="View app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
            <!--TigoPOS cobradores-->
-           <div class="col s12 m6 l4">
-            <div class="card medium">
+           <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/logo_pos_cobradores.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -959,7 +938,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> React Native</li>
                   <li>Allows to make a voucher to cash control</li>
@@ -972,16 +951,16 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=xposcobradores.gt.com.homeland" target="_blank" data-position="top"
                     data-tooltip="View app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
           <!--Samsung-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card medium activator">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/samsung_videos.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
@@ -996,7 +975,7 @@
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                    class="fas fa-times float-end"></i></span>
                 <ul>
                   <li><b>Mobile:</b> React Native</li>
                   <li>Allow to show advertising videos in devices like demo mode</li>
@@ -1007,8 +986,8 @@
                 <div class="card-action">
                   <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=gt.com.homeland.advertising_samsung" target="_blank" data-position="top"
                     data-tooltip="View app"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
+                    class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -1020,163 +999,186 @@
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
+      <h3 class="page-title white-text teal" data-aos="fade-down"><i class="fas fa-code me-2"></i>Skills</h3>
       <div class="container">
-        <!-- Languages web -->
-        <div class="card">
+        <!-- Backend -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <div class="card-content">
-            <h4 class="brown-text light">Web</h4>
+            <h4 class="brown-text light"><i class="fas fa-server me-2"></i>Backend</h4>
             <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/php-logo-20747.png" class="responsive-img" />PHP
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="100">
+                <img alt="PHP" src="/assets/img/php-logo-20747.png" class="img-fluid skill-icon" />PHP
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/nodejs.png" class="responsive-img" />NodeJs
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="150">
+                <img alt="Node.js" src="/assets/img/nodejs.png" class="img-fluid skill-icon" />NodeJs
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/javascript.png" class="responsive-img" />Javascript
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="200">
+                <img alt="TypeScript" src="/assets/img/typescript-logo.svg" class="img-fluid skill-icon" />TypeScript
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/reactjs.png" class="responsive-img" />ReactJs
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="250">
+                <img alt="Ruby" src="/assets/img/ruby-logo.svg" class="img-fluid skill-icon" />Ruby
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="300">
+                <img alt="Ruby on Rails" src="/assets/img/rails-logo.svg" class="img-fluid skill-icon" />Rails
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="350">
+                <img alt="C#" src="/assets/img/csharp-logo.svg" class="img-fluid skill-icon" />C#
               </div>
             </div>
           </div>
         </div>
-        <div class="card">
+
+        <!-- Frontend -->
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-content">
-            <h4 class="brown-text light">Mobile</h4>
+            <h4 class="brown-text light"><i class="fas fa-paint-brush me-2"></i>Frontend</h4>
             <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Flutter.png" class="responsive-img" />Flutter
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="100">
+                <img alt="Javascript" src="/assets/img/javascript.png" class="img-fluid skill-icon" />Javascript
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/dart.png" class="responsive-img" />Dart
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="150">
+                <img alt="React.js" src="/assets/img/reactjs.png" class="img-fluid skill-icon" />ReactJs
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/colorreact_native4._resized.png" class="responsive-img" />React Native
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="200">
+                <img alt="Next.js" src="/assets/img/nextjs-logo.svg" class="img-fluid skill-icon" />Next.js
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Java_en_Android.png" class="responsive-img" />Java for Android
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="250">
+                <img alt="HTML5" src="/assets/img/html5-300x300.jpg" class="img-fluid skill-icon" />HTML5
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Kotlin_Icon.png" class="responsive-img" />Kotlin
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="300">
+                <img alt="CSS3" src="/assets/img/css3-300x300.jpg" class="img-fluid skill-icon" />CSS3
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/swift.png" class="responsive-img" />Swift
+            </div>
+          </div>
+        </div>
+        <!-- Mobile -->
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-content">
+            <h4 class="brown-text light"><i class="fas fa-mobile-alt me-2"></i>Mobile</h4>
+            <div class="row text-center">
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="100">
+                <img alt="Flutter" src="/assets/img/Flutter.png" class="img-fluid skill-icon" />Flutter
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="150">
+                <img alt="Dart" src="/assets/img/dart.png" class="img-fluid skill-icon" />Dart
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="200">
+                <img alt="React Native" src="/assets/img/colorreact_native4._resized.png" class="img-fluid skill-icon" />React Native
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="250">
+                <img alt="Java for Android" src="/assets/img/Java_en_Android.png" class="img-fluid skill-icon" />Java for Android
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="300">
+                <img alt="Kotlin" src="/assets/img/Kotlin_Icon.png" class="img-fluid skill-icon" />Kotlin
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="350">
+                <img alt="Swift" src="/assets/img/swift.png" class="img-fluid skill-icon" />Swift
               </div>
             </div>
           </div>
         </div>
 
         <!-- Databases-->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-content">
-            <h4 class="brown-text light">Databases</h4>
+            <h4 class="brown-text light"><i class="fas fa-database me-2"></i>Databases</h4>
             <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="100">
+                <img alt="MySQL" src="/assets/img/mysql-logo-1-300x300.jpg" class="img-fluid skill-icon" />MySQL
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mariadb_logo_icon_168996.png" class="responsive-img" />MariaDB
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="150">
+                <img alt="MariaDB" src="/assets/img/mariadb_logo_icon_168996.png" class="img-fluid skill-icon" />MariaDB
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/logo_mongodb.png" class="responsive-img" />MongoDB
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="200">
+                <img alt="MongoDB" src="/assets/img/logo_mongodb.png" class="img-fluid skill-icon" />MongoDB
               </div>
             </div>
           </div>
         </div>
 
         <!-- Other -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
           <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
+            <h4 class="brown-text light"><i class="fas fa-tools me-2"></i>Other</h4>
             <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="100">
+                <img alt="Git" src="/assets/img/git.png" class="img-fluid skill-icon" />Git
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Moby-logo.png" class="responsive-img" />Docker
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="150">
+                <img alt="Docker" src="/assets/img/Moby-logo.png" class="img-fluid skill-icon" />Docker
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="200">
+                <img alt="AWS" src="/assets/img/aws.png" class="img-fluid skill-icon" />AWS
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" />Shell script
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="250">
+                <img alt="Azure" src="/assets/img/azure-logo.svg" class="img-fluid skill-icon" />Azure
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Jenkins_logo.svg" class="responsive-img" />Jenkins
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="300">
+                <img alt="Shell script" src="/assets/img/shell-logo-1-300x300.jpg" class="img-fluid skill-icon" />Shell script
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 mb-3 skill-item" data-aos="zoom-in" data-aos-delay="350">
+                <img alt="Jenkins" src="/assets/img/Jenkins_logo.svg" class="img-fluid skill-icon" />Jenkins
               </div>
             </div>
           </div>
         </div>
 
         <!-- certifications -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
           <div class="card-content">
             <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row"> 
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/cert_devops.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text"> Devops engineer</span>
-                      </div>
-                    </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100">
+                  <div class="card-image">
+                    <img src="/assets/img/cert_devops.png" class="img-fluid w-100" alt="DevOps Engineer Certificate">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title teal-text">DevOps Engineer</span>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/certificate_Ios_developer.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text"> IOS Mobile   developer</span>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100">
+                  <div class="card-image">
+                    <img src="/assets/img/certificate_Ios_developer.png" class="img-fluid w-100" alt="iOS Mobile Developer Certificate">
                   </div>
-
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/certificate_backend_php.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Desarrollo Web Backend PHP</span>
-                      </div>
-                    </div>
+                  <div class="card-content">
+                    <span class="card-title teal-text">iOS Mobile Developer</span>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/certificate_flutter_advanced.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text"> Flutter advanced</span>
-                      </div>
-                    </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100">
+                  <div class="card-image">
+                    <img src="/assets/img/certificate_backend_php.png" class="img-fluid w-100" alt="Backend PHP Certificate">
                   </div>
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/certificate_reactjs.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text"> ReactJs</span>
-                      </div>
-                    </div>
+                  <div class="card-content">
+                    <span class="card-title teal-text">Desarrollo Web Backend PHP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100">
+                  <div class="card-image">
+                    <img src="/assets/img/certificate_flutter_advanced.png" class="img-fluid w-100" alt="Flutter Advanced Certificate">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title teal-text">Flutter Advanced</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100">
+                  <div class="card-image">
+                    <img src="/assets/img/certificate_reactjs.png" class="img-fluid w-100" alt="ReactJS Certificate">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title teal-text">ReactJS</span>
                   </div>
                 </div>
               </div>
@@ -1189,11 +1191,11 @@
 
     <!-- Seventh Section: Education -->
     <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+      <h3 class="page-title white-text teal" data-aos="fade-down"><i class="fas fa-graduation-cap me-2"></i>Education</h3>
       <div class="container">
         <div class="row">
           <!-- Education -->
-          <div class="col s12 m6 l6">
+          <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-content">
                 <p>
@@ -1220,7 +1222,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m6 l6">
+          <div class="col-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-content">
                 <p>
@@ -1256,31 +1258,31 @@
 
     <!-- Eight Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
+      <h3 class="page-title white-text teal" data-aos="fade-down"><i class="fas fa-envelope me-2"></i>Contact</h3>
       <div class="container">
         <p>
           <a aria-label="Call Edward" data-position="top" data-tooltip="Call Edward"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+            class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i class="fas fa-phone"></i><a
               aria-label="Call Edward">+502 30468139</a></a>
         </p>
         <p>
           <a aria-label="Email Edward" href="mailto:acuedd@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Edward" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Edward" href="mailto:acuedd@gmail.com"
+            data-tooltip="Email Edward"             class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+              class="fas fa-envelope"></i><a aria-label="Email Edward" href="mailto:acuedd@gmail.com"
               class="hoverline">acuedd@gmail.com</a></a>
         </p>
         <p>
           <a aria-label="View Edward on GitHub" href="https://github.com/acuedd" target="_blank"
             data-position="top" data-tooltip="View Edward on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+            class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i class="fab fa-github"></i><a
               aria-label="Edward on Github" href="https://github.com/acuedd" class="hoverline"
               target="_blank">https://github.com/acuedd</a></a>
         </p>
         <p>
           <a aria-label="View Edward on LinkedIn" href="https://www.linkedin.com/in/acuedd/" target="_blank"
             data-position="top" data-tooltip="View Edward on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Edward on LinkedIn" href="https://www.linkedin.com/in/acuedd/"
+            class="btn btn-lg btn-primary rounded-circle me-2" data-aos="zoom-in"><i
+              class="fab fa-linkedin"></i><a aria-label="Edward on LinkedIn" href="https://www.linkedin.com/in/acuedd/"
               class="hoverline" target="_blank">linkedin.com/in/acuedd</a></a>
         </p>
       </div>
@@ -1302,19 +1304,75 @@
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- AOS - Animate On Scroll JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
-    // Materialize - Initializers
+    // Initialize AOS with optimized settings for smooth animations
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 120,
+      delay: 0,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+      startEvent: 'DOMContentLoaded',
+      disable: function() {
+        // Disable on mobile devices with low performance (optional)
+        // return window.innerWidth < 768 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        return false; // Enable on all devices for now
+      }
+    });
+
+    // Refresh AOS on window resize for better performance (debounced)
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        AOS.refresh();
+      }, 250);
+    }, { passive: true });
+
+    // Refresh AOS once after initial load to ensure all elements are detected
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        AOS.refresh();
+      }, 100);
+    });
+
+    // Bootstrap ScrollSpy
     $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+      // Initialize Bootstrap ScrollSpy
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-side',
+        offset: 100
+      });
+
+      // Smooth scrolling for anchor links
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top - 80
+          }, 1000);
+        }
+      });
+
+      // Mobile menu toggle
+      $('.navbar-toggler').on('click', function() {
+        $('#slide-out').toggleClass('show');
+      });
+
+      // Close mobile menu on link click
+      $('#slide-out a').on('click', function() {
+        $('#slide-out').removeClass('show');
+      });
+    });
   </script>
 </body>
 
